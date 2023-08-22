@@ -1,1 +1,233 @@
-@charset "UTF-8";@font-face{font-family:'montserrat-thin';src:url(fontes/Montserrat/Montserrat-Thin.ttf)}@font-face{font-family:'frances';src:url(fontes/Frances/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf)}@font-face{font-family:'montserrat-medium';src:url(fontes/Montserrat/Montserrat-Medium.ttf)}body{background-color:hsl(30,38%,92%)}.conteiner{height:975px;display:flex;justify-content:center;align-items:center}.imagem{display:flex}.borda-da-imagem{border-radius:10px 0 0 10px}.caixa{background-color:#FFF;width:600px;height:450px;display:flex;border-radius:10px}.sub-titulo{font-family:'montserrat-thin';font-weight:600;letter-spacing:5px;font-size:11px;padding:35px}.titulo{font-family:'frances';font-size:30px;display:flex;flex-wrap:wrap;width:200px;position:relative;left:34px;bottom:15px;line-height:1}.paragrafo{font-family:'montserrat-thin';font-weight:1000;font-size:15px;line-height:1.6;display:flex;flex-wrap:wrap;width:235px;position:relative;left:34px;bottom:5px}.área-de-compra{display:flex;flex-direction:column;padding:15%}.preços{display:flex;position:relative;bottom:30px}.p-final{font-size:33px;font-family:'frances';color:hsl(158,36%,37%)}.p-inicial{font-family:'montserrat-thin';font-weight:600;font-size:13px;position:relative;top:12px;left:20px}.botão{font-family:'montserrat-medium';background-color:hsl(158,36%,37%);cursor:pointer;border-radius:10px;border:0;width:227px;height:50px}.botão:hover{background-color:hsl(158,47%,42%)}.botão a{color:#FFF;text-decoration:none}@media (max-width: 610px){.conteiner{height:975px;display:flex;justify-content:center;align-items:center}.imagem{display:flex;flex-direction:column;width:400px}.imagem img{border-radius:10px 10px 0 0}.caixa{background-color:#FFF;width:400px;height:725px;display:flex;flex-direction:column;border-radius:10px}.sub-titulo{font-family:'montserrat-thin';font-weight:600;letter-spacing:5px;font-size:15px;padding:35px}.titulo{font-family:'frances';font-size:36px;display:flex;width:370px;position:relative;left:34px;bottom:15px;line-height:1}.paragrafo{font-family:'montserrat-thin';font-weight:1000;font-size:16px;line-height:1.6;display:flex;flex-wrap:wrap;width:315px;position:relative;left:34px;bottom:-5px}.área-de-compra{display:flex;flex-direction:column;padding:15%}.preços{display:flex;position:relative;bottom:30px}.p-final{font-size:40px;position:relative;right:30px;font-family:'frances';color:hsl(158,36%,37%)}.p-inicial{font-family:'montserrat-thin';font-weight:600;font-size:14px;position:relative;top:17px;left:-8px}.botão{font-family:'montserrat-medium';background-color:hsl(158,36%,37%);cursor:pointer;border-radius:10px;border:0;width:335px;height:50px;position:relative;right:30px;bottom:10px}.botão:hover{background-color:hsl(158,47%,42%)}.botão a{color:#FFF;text-decoration:none}}
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'montserrat-thin';
+    src: url(fontes/Montserrat/Montserrat-Thin.ttf)
+}
+
+@font-face {
+    font-family: 'frances';
+    src: url(fontes/Frances/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf)
+}
+
+@font-face {
+    font-family: 'montserrat-medium';
+    src: url(fontes/Montserrat/Montserrat-Medium.ttf)
+}
+
+body {
+    background-color: hsl(30, 38%, 92%)
+}
+
+.conteiner {
+    height: 975px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.imagem {
+    display: flex
+}
+
+.borda-da-imagem {
+    border-radius: 10px 0 0 10px
+}
+
+.caixa {
+    background-color: #FFF;
+    width: 600px;
+    height: 450px;
+    display: flex;
+    border-radius: 10px
+}
+
+.sub-titulo {
+    font-family: 'montserrat-thin';
+    font-weight: 600;
+    letter-spacing: 5px;
+    font-size: 11px;
+    padding: 35px
+}
+
+.titulo {
+    font-family: 'frances';
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    position: relative;
+    left: 34px;
+    bottom: 15px;
+    line-height: 1
+}
+
+.paragrafo {
+    font-family: 'montserrat-thin';
+    font-weight: 1000;
+    font-size: 15px;
+    line-height: 1.6;
+    display: flex;
+    flex-wrap: wrap;
+    width: 235px;
+    position: relative;
+    left: 34px;
+    bottom: 5px
+}
+
+.área-de-compra {
+    display: flex;
+    flex-direction: column;
+    padding: 15%
+}
+
+.preços {
+    display: flex;
+    position: relative;
+    bottom: 30px
+}
+
+.p-final {
+    font-size: 33px;
+    font-family: 'frances';
+    color: hsl(158, 36%, 37%)
+}
+
+.p-inicial {
+    font-family: 'montserrat-thin';
+    font-weight: 600;
+    font-size: 13px;
+    position: relative;
+    top: 12px;
+    left: 20px
+}
+
+.botão {
+    font-family: 'montserrat-medium';
+    background-color: hsl(158, 36%, 37%);
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0;
+    width: 227px;
+    height: 50px
+}
+
+.botão:hover {
+    background-color: hsl(158, 47%, 42%)
+}
+
+.botão a {
+    color: #FFF;
+    text-decoration: none
+}
+
+@media (max-width: 610px) {
+    .conteiner {
+        height: 975px;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    .imagem {
+        display: flex;
+        flex-direction: column;
+        width: 400px
+    }
+
+    .imagem img {
+        border-radius: 10px 10px 0 0
+    }
+
+    .caixa {
+        background-color: #FFF;
+        width: 400px;
+        height: 725px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px
+    }
+
+    .sub-titulo {
+        font-family: 'montserrat-thin';
+        font-weight: 600;
+        letter-spacing: 5px;
+        font-size: 15px;
+        padding: 35px
+    }
+
+    .titulo {
+        font-family: 'frances';
+        font-size: 36px;
+        display: flex;
+        width: 370px;
+        position: relative;
+        left: 34px;
+        bottom: 15px;
+        line-height: 1
+    }
+
+    .paragrafo {
+        font-family: 'montserrat-thin';
+        font-weight: 1000;
+        font-size: 16px;
+        line-height: 1.6;
+        display: flex;
+        flex-wrap: wrap;
+        width: 315px;
+        position: relative;
+        left: 34px;
+        bottom: -5px
+    }
+
+    .área-de-compra {
+        display: flex;
+        flex-direction: column;
+        padding: 15%
+    }
+
+    .preços {
+        display: flex;
+        position: relative;
+        bottom: 30px
+    }
+
+    .p-final {
+        font-size: 40px;
+        position: relative;
+        right: 30px;
+        font-family: 'frances';
+        color: hsl(158, 36%, 37%)
+    }
+
+    .p-inicial {
+        font-family: 'montserrat-thin';
+        font-weight: 600;
+        font-size: 14px;
+        position: relative;
+        top: 17px;
+        left: -8px
+    }
+
+    .botão {
+        font-family: 'montserrat-medium';
+        background-color: hsl(158, 36%, 37%);
+        cursor: pointer;
+        border-radius: 10px;
+        border: 0;
+        width: 335px;
+        height: 50px;
+        position: relative;
+        right: 30px;
+        bottom: 10px
+    }
+
+    .botão:hover {
+        background-color: hsl(158, 47%, 42%)
+    }
+
+    .botão a {
+        color: #FFF;
+        text-decoration: none
+    }
+}
