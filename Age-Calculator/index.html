@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <form id="dateForm">
+                <div class="dates">
+                    <div class="dateInputs">
+                        DAY
+                        <br>
+                        <input type="number" name="dayForm" id="dayForm" placeholder="DD">
+                        <br>
+                        <div id="errorDay" class="errorMessage">
+                    
+                        </div>
+                    </div>
+                    <div class="dateInputs">
+                        MONTH
+                        <br>
+                        <input type="number" name="monthForm" id="monthForm" placeholder="MM">
+                        <br>
+                        <div id="errorMonth" class="errorMessage">
+                    
+                        </div>
+                    </div>
+                    <div class="dateInputs">
+                        YEAR
+                        <br>
+                        <input type="number" name="yearForm" id="yearForm" placeholder="YYYY">
+                        <br>
+                        <div id="errorYear" class="errorMessage">
+                    
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="arrowButton">
+                    <img src="images/Breezeicons-actions-22-go-down.svg.png" alt="Down Arrow">
+                </button>
+            </form>
+        </header>
+
+        <section>
+            <div>
+                <span id="years">- - </span> years
+            </div> 
+            <div>
+                <span id="months">- - </span> months
+            </div>
+            <div>
+                <span id="days">- - </span> days
+            </div>
+        </section>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

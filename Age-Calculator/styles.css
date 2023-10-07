@@ -1,0 +1,192 @@
+@font-face{
+    font-family: poppins-bold;
+    src: url('fonts/Poppins-bold.ttf');
+}
+
+@font-face {
+    font-family: poppins-extraBoldItalic;
+    src: url('fonts/Poppins-ExtraBoldItalic.ttf');
+}
+
+@font-face {
+    font-family: poppins-italic;
+    src: url('fonts/Poppins-italic.ttf');
+}
+
+body{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 920px; 
+   background-color: #F2F2F2;
+}
+
+#container{
+    background-color: #FFFFFF;
+    padding: 45px;
+    border-radius: 20px 20px 180px 20px;
+    width: 42%;
+    min-width: 800px;
+}
+
+header{
+    border-bottom: 1px solid rgba(168, 162, 162, 0.432);
+}
+
+form{
+    display: flex;
+    font-family: poppins-bold;
+    letter-spacing: 5px;
+    color: rgba(0, 0, 0, 0.637);
+    padding-bottom: 30px;
+}
+
+.dates{
+    display: flex;
+}
+
+input{
+    border: 1px solid rgba(204, 195, 195, 0.548);
+    width: 60%;
+    max-width: 120px;
+    max-height: 20px;
+    border-radius: 5px;
+    padding: 25px;
+    font-size: 30px;
+    font-family: poppins-bold;
+    color: rgb(0, 0, 0);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:hover{
+    border-color: black;
+    transform: scale(1.05);
+    transition: .6s;
+}
+
+.dateInputs{
+    margin: 0px;
+    padding-right: 30px;
+}
+
+.arrowButton{
+    background-color: hsl(259, 100%, 65%);
+    border: 0px;
+    border-radius: 100%;
+    width: 100px;
+    height: 95px;
+    position: relative;
+    top: 80px;
+    left: 93px;
+    cursor: pointer;
+}
+
+.arrowButton:hover{
+    background-color: black;
+    transform: scale(1.10);
+    transition: .6s;
+}
+
+img{
+    width: 45px;
+    height: 40px;
+}
+
+section{
+    font-family: poppins-extraBoldItalic;
+    font-size: 90px;
+    line-height: 115px;
+    padding-top: 60px;
+    height: 100%;
+}
+
+span{
+    color: hsl(259, 100%, 65%);
+}
+
+.errorMessage{
+    font-family: poppins-italic;
+    letter-spacing: 0px;
+    color: red;
+    
+}
+
+.formErrorStyle{
+    color: red;
+}
+
+.formErrorInputStyle{
+    border-color: red;
+}
+
+.inputButtonMove{
+    top: 105px;
+}
+
+@media screen and (max-width: 930px){
+    #container{
+        width: 75%;
+        min-width: 0px;
+        height: 600px;
+    }
+
+    form{
+        display: block;
+        padding-bottom: 0px;
+        
+    }
+
+    .arrowButton{
+        left: 86%;
+        top: 50px;
+    }
+
+    section{
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 840px){
+    #container{
+        width: 70%;
+        min-width: 0px;
+        height: 600px;
+    }
+
+    .arrowButton{
+        left: 40%;
+    }
+
+    input{
+        font-size: 170%;
+    }
+}
+
+@media screen and (max-width: 660px){
+
+    input{
+        width: 70%;
+        font-size: 150%;
+        padding-left: 20%;
+        padding-right: 25%;
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    form{
+        font-size: 90%;
+    }
+
+    .arrowButton{
+        width: 90px;
+        height: 85px;
+    }
+
+    section{
+        font-size: 350%;
+    }
+}
