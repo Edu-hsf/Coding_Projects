@@ -124,10 +124,24 @@ function calculateValues(event) {
     }
 
     if(calculationResult.days !== '' && calculationResult.months !== '' && calculationResult.years !== ''){
+        for (let i = 1; i <= calculationResult.days; i++) {
+            setTimeout(function name(params) {
+                spanDate.days.innerText = i
+            }, i * 70)
+            
+        }
 
-        spanDate.days.innerText = calculationResult.days
-        spanDate.months.innerText = calculationResult.months
-        spanDate.years.innerText = calculationResult.years
+        for (let i = 1; i <= calculationResult.months; i++) {
+            setTimeout(function name(params) {
+                spanDate.months.innerText = i
+            }, i * 70)
+        }
+
+        for (let i = 1; i <= calculationResult.years; i++) {
+            setTimeout(function name(params) {
+                spanDate.years.innerText = i
+            }, i * 70)
+        }
     } 
 
     addStyleForm()
