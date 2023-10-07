@@ -190,3 +190,64 @@ span{
         font-size: 350%;
     }
 }
+
+@media screen and (max-width: 480px){
+    input{
+        width: 50%;
+        font-size: 150%;
+        padding-left: 20%;
+        padding-right: 44%;
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    form{
+        font-size: 10px;
+    }
+
+    .arrowButton{
+        width: 80px;
+        height: 75px;
+        left: 35%;
+        top: 40px;
+    }
+
+    section{
+        font-size: 350%;
+
+    }
+}
+
+@media screen and (max-width: 412px){
+    input{
+        width: 50%;
+        font-size: 11px;
+        padding-left: 20%;
+        padding-right: 40%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    form{
+        font-size: 10px;
+    }
+
+    .arrowButton{
+        width: 80px;
+        height: 75px;
+        left: 35%;
+        top: 40px;
+    }
+
+    section{
+        font-size: 240%;
+
+    }
+}
+
+@media screen and (max-width: 328px){
+    section{
+        font-size: 150%;
+
+    }
+}
