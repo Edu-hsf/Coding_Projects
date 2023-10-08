@@ -123,21 +123,24 @@ function calculateValues(event) {
         }   
     }
 
+// ==============================================================================
+// FINAL CALCULATION
+
     if(calculationResult.days !== '' && calculationResult.months !== '' && calculationResult.years !== ''){
-        for (let i = 1; i <= calculationResult.days; i++) {
+        for (let i = 0; i <= calculationResult.days; i++) {
             setTimeout(function name(params) {
                 spanDate.days.innerText = i
             }, i * 70)
             
         }
 
-        for (let i = 1; i <= calculationResult.months; i++) {
+        for (let i = 0; i <= calculationResult.months; i++) {
             setTimeout(function name(params) {
                 spanDate.months.innerText = i
             }, i * 70)
         }
 
-        for (let i = 1; i <= calculationResult.years; i++) {
+        for (let i = 0; i <= calculationResult.years; i++) {
             setTimeout(function name(params) {
                 spanDate.years.innerText = i
             }, i * 70)
