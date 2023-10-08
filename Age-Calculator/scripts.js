@@ -30,6 +30,8 @@ function calculateValues(event) {
         years: ''
     }
 
+    let atualMonth = Number(calendarArray.indexOf(atualDate[1]) +1)
+
     spanDate.days.innerText = '- - '
     spanDate.months.innerText = '- - '
     spanDate.years.innerText = '- - '
@@ -67,8 +69,6 @@ function calculateValues(event) {
 // ==============================================================================
 // MONTHS CALCULATION ↓
 
-    let atualMonth = Number(calendarArray.indexOf(atualDate[1]) +1)
-
     if(dateOfBirth.month >= 1 && dateOfBirth.month <= 12){
         calculationResult.months = atualMonth - dateOfBirth.month
         
@@ -81,7 +81,10 @@ function calculateValues(event) {
     } else{ 
         notFound.month = 'invalid month'
     }
-    
+
+    if(dateOfBirth.month > atualMonth && dateOfBirth.year === Number(atualDate[3])){
+        notFound.month = 'invalid month'
+    } 
 
     if(dateOfBirth.month === atualMonth && dateOfBirth.day > Number(atualDate[2])){
         calculationResult.years -= 1
@@ -95,17 +98,12 @@ function calculateValues(event) {
 
         calculationResult.months = 12
     } 
-
-    if(calculationResult.months !== ''){
-        notFound.month = ''
-    }
-
-   
+    
 
 // ==============================================================================
 // DAYS CALCULATION ↓
 
-    if(((dateOfBirth.day >= 31) && (dateOfBirth.month === 2 || dateOfBirth.month === 4 || dateOfBirth.month === 6 || dateOfBirth.month === 9 || dateOfBirth.month === 11)) || ((dateOfBirth.day === 29) && (dateOfBirth.month === 2) && (leapYear == false)) || ((dateOfBirth.day > 29) && (dateOfBirth.month === 2)) || (dateOfBirth.day <= 0)){
+    if(((dateOfBirth.day >= 31) && (dateOfBirth.month === 2 || dateOfBirth.month === 4 || dateOfBirth.month === 6 || dateOfBirth.month === 9 || dateOfBirth.month === 11)) || ((dateOfBirth.day === 29) && (dateOfBirth.month === 2) && (leapYear == false)) || ((dateOfBirth.day > 29) && (dateOfBirth.month === 2)) || (dateOfBirth.day <= 0) || (dateOfBirth.day >= 32) || ((dateOfBirth.day > Number(atualDate[2])) && (dateOfBirth.month === atualMonth) && (dateOfBirth.year === Number(atualDate[3])))){
         notFound.day = 'invalid date'
     } else if(calculationResult.days === '' && notFound.month === ''){
         if(dateOfBirth.day > Number(atualDate[2])){
@@ -126,7 +124,7 @@ function calculateValues(event) {
 // ==============================================================================
 // FINAL CALCULATION
 
-    if(calculationResult.days !== '' && calculationResult.months !== '' && calculationResult.years !== ''){
+    if((calculationResult.days !== '' && calculationResult.months !== '' && calculationResult.years !== '') && (notFound.day === '' && notFound.month === '' && notFound.year === '')){
         for (let i = 0; i <= calculationResult.days; i++) {
             setTimeout(function name(params) {
                 spanDate.days.innerText = i
