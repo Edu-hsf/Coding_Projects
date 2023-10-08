@@ -27,6 +27,7 @@ body{
     border-radius: 20px 20px 180px 20px;
     width: 42%;
     min-width: 800px;
+    height: auto;
 }
 
 header{
@@ -101,7 +102,6 @@ section{
     font-size: 90px;
     line-height: 115px;
     padding-top: 60px;
-    height: 100%;
 }
 
 span{
@@ -154,7 +154,6 @@ span{
     #container{
         width: 70%;
         min-width: 0px;
-        height: 600px;
     }
 
     .arrowButton{
@@ -184,6 +183,8 @@ span{
     .arrowButton{
         width: 90px;
         height: 85px;
+        top: 45px;
+        left: 38%;
     }
 
     section{
@@ -192,9 +193,13 @@ span{
 }
 
 @media screen and (max-width: 480px){
+    #container{
+        height: auto;
+    }
+
     input{
-        width: 50%;
-        font-size: 150%;
+        width: 60%;
+        font-size: 20px;
         padding-left: 20%;
         padding-right: 44%;
         padding-top: 20%;
@@ -202,52 +207,83 @@ span{
     }
 
     form{
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .arrowButton{
         width: 80px;
         height: 75px;
-        left: 35%;
+        left: 38%;
         top: 40px;
     }
 
     section{
-        font-size: 350%;
+        font-size: 305%;
 
     }
 }
 
 @media screen and (max-width: 412px){
+    #container{
+        height: 47%;
+    }
+
     input{
-        width: 50%;
-        font-size: 11px;
-        padding-left: 20%;
-        padding-right: 40%;
+        width: 76%;
+        height: 110%;
+        font-size: 15px;
+        padding-left: 25%;
+        padding-right: 20%;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+
+    form{
+        font-size: 12px;
+    }
+
+    .arrowButton{
+        width: 70px;
+        height: 65px;
+        left: 38%;
+        top: 35px;
+    }
+
+    section{
+        font-size: 240%;
+        line-height: 80px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 328px){
+    #container{
+        height: 47%;
     }
 
     form{
         font-size: 10px;
     }
 
+    input{
+        width: 76%;
+        height: 70%;
+        font-size: 15px;
+        padding-left: 30%;
+        padding-right: 30%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
     .arrowButton{
-        width: 80px;
-        height: 75px;
-        left: 35%;
-        top: 40px;
+        width: 70px;
+        height: 65px;
+        left: 34%;
+        top: 33px;
     }
 
     section{
-        font-size: 240%;
-
-    }
-}
-
-@media screen and (max-width: 328px){
-    section{
-        font-size: 150%;
-
+        font-size: 210%;
+        
     }
 }
