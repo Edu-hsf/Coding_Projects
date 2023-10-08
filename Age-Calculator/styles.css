@@ -193,8 +193,15 @@ span{
 }
 
 @media screen and (max-width: 480px){
+    body{
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+     }
+
     #container{
         height: auto;
+        margin: 20px;
     }
 
     input{
