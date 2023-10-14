@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main id="home" class="appear">
+        <form>
+            <header>
+                <div>
+                    <span class="player-1">PLAYER 1</span>
+                    <br>
+                    <input type="text" id="inputPlayer-1" autocomplete="off">
+                </div>
+                <div>
+                    <span class="player-2">PLAYER 2</span>
+                    <br>
+                    <input type="text" id="inputPlayer-2" autocomplete="off">
+                </div>
+            </header>
+            <section>
+                <button type="submit" id="start" class="active">START</button>
+            </section>
+        </form>
+    </main>
+
+    <main id="game">
+        <header>
+            <div class="score-name">
+                <div style="width: 40%; font-family: sans-serif;">X</div>
+                <span id="namePlayer1"></span>
+            </div>
+            <div id="score" style="font-family: sans-serif;">
+                <span id="scorePlayer1">-</span>
+                x
+                <span id="scorePlayer2">-</span>
+            </div>
+            <div class="score-name">
+                <span id="namePlayer2"></span>
+                <div style="width: 40%; font-family: sans-serif;">O</div>
+            </div>
+        </header>
+
+        <section id="frames">
+            <div>
+                <button id="position-1"></button>
+                <button id="position-2"></button>
+                <button id="position-3"></button>
+            </div>
+            <div>
+                <button id="position-4"></button>
+                <button id="position-5"></button>
+                <button id="position-6"></button>
+            </div>
+            <div>
+                <button id="position-7"></button>
+                <button id="position-8"></button>
+                <button id="position-9"></button>
+            </div>
+        </section>
+    </main>
+
+    <main id="gameOver">
+        <div id="win">
+            <span id="winningPlayer" style="font-family: 'AutourOne';"></span>
+            YOU WIN!
+        </div>
+
+        <div id="tied">
+            TIED GAME
+        </div>
+
+        <div id="optionButtons">
+            <button id="continue">Continue</button>
+            <button id="backToHome">Back To Home</button>
+        </div>
+
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

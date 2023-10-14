@@ -1,0 +1,438 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+}
+
+@font-face {
+    font-family: 'Victory';
+    src: url('fonts/victory/VICTORY.otf');
+
+}
+
+@font-face {
+    font-family: 'AutourOne';
+    src: url('fonts/Autour_One/AutourOne-Regular.ttf');
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        display: block;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 960px;
+    background-image: url('images/wood\ background.jpg');
+}
+
+main {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    width: 700px;
+    height: 50%;
+}
+
+form {
+    height: 100%;
+}
+
+.appear {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.disappear {
+    animation: fadeOut 2s forwards;
+}
+
+#home header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 30%;
+    text-align: center;
+}
+
+header div input:focus {
+    outline: none;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+}
+
+#home section button:focus {
+    outline: none;
+}
+
+.player-1 {
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'Montserrat';
+    letter-spacing: 8px;
+}
+
+.player-2 {
+    color: #ffffff;
+    font-size: 40px;
+    font-family: Montserrat;
+    letter-spacing: 8px;
+}
+
+#inputPlayer-1 {
+    background-color: #f2f2f200;
+    border: 3px solid #e9e9e9;
+    border-radius: 10px;
+    height: 40px;
+    width: 95%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#inputPlayer-2 {
+    background-color: #f2f2f200;
+    border: 3px solid #e9e9e9;
+    border-radius: 10px;
+    height: 40px;
+    width: 95%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#home section button {
+    background-color: #857b7b00;
+    border: 3px solid #cfcfcf00;
+    border-radius: 10px;
+    height: 80px;
+    width: 50%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 60px;
+    font-family: 'AutourOne';
+    overflow: hidden;
+    position: relative;
+}
+
+#home section button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 3px;
+    background-color: #ffffff;
+    width: 0;
+    transition: width 1.0s, left 1.0s;
+}
+
+#home section button:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+#home section button:hover {
+    cursor: pointer;
+}
+
+.active:active {
+    transform: scale(0.9);
+}
+
+.focus:focus {
+    transform: scale(0.9);
+    transition: 0.6s;
+}
+
+#game header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -70px;
+    color: #ffffff;
+}
+
+.score-name {
+    display: flex;
+    font-size: 40px;
+    width: 30%;
+    text-align: center;
+    border: 3px solid #ffffff;
+}
+
+#score {
+    font-size: 40px;
+    padding: 0px 15px 0px 15px;
+}
+
+#namePlayer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 3px solid #ffffff;
+    width: 100%;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'AutourOne';
+}
+
+#namePlayer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 3px solid #ffffff;
+    width: 100%;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'AutourOne';
+}
+
+#frames {
+    height: 80%;
+}
+
+#frames div button {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    border: 2px solid #ffffff;
+    background-color: #00000000;
+}
+
+#frames div button:hover {
+    cursor: pointer;
+    background-color: #e0e0e05e;
+}
+
+#win {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    font-size: 600%;
+    font-family: 'Victory';
+    color: #ffffff;
+}
+
+#optionButtons {
+    text-align: center;
+    word-spacing: 20px;
+}
+
+#optionButtons button {
+    height: 60px;
+    width: 35%;
+    border: 4px solid #ffffff;
+    background-color: #00000000;
+    color: #ffffff;
+    font-size: 30px;
+    padding: 10px
+}
+
+#optionButtons button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: .6s;
+    background-color: #ffffff00;
+    color: #000000;
+    border-color: #000000;
+}
+
+#tied {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    font-size: 600%;
+    font-family: 'Victory';
+    color: #ffffff;
+}
+
+.error {
+    border: 3px solid #ff2d2d;
+    color: #ff2d2d;
+}
+
+@media screen and (max-width: 765px) {
+    main {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .player-1 {
+        font-size: 180%;
+    }
+
+    .player-2 {
+        font-size: 180%;
+    }
+
+    #inputPlayer-1 {
+        width: 75%;
+    }
+
+    #inputPlayer-2 {
+        width: 75%;
+    }
+    
+    #namePlayer1{
+        font-size: 0.4em;
+    }
+
+    #namePlayer2{
+        font-size: 0.4em;
+    }
+
+    #win{
+        font-size: 60px;
+    }
+
+    #optionButtons button{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    body{
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        top: 70px;
+    }
+
+    .player-1 {
+        font-size: 150%;
+    }
+
+    .player-2 {
+        font-size: 150%;
+    }
+
+    #namePlayer1{
+        font-size: 0.4em;
+    }
+
+    #namePlayer2{
+        font-size: 0.4em;
+    }
+
+    #optionButtons button{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .player-1 {
+        font-size: 120%;
+    }
+
+    .player-2 {
+        font-size: 120%;
+    }
+
+    #inputPlayer-1 {
+        height: 30px;
+    }
+
+    #inputPlayer-2 {
+        height: 30px;
+    }
+
+    #home section button {
+        font-size: 40px;
+    }
+
+    .score-name{
+        font-size: 30px;
+    }
+
+    #win{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 413px) {
+    #continue{
+        position: relative;
+        top: 8px;
+    }
+
+    .player-1{
+        font-size: 17px;
+    }
+
+    .player-2{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .player-1 {
+        font-size: 140%;
+    }
+
+    .player-2 {
+        font-size: 140%;
+    }
+
+    #namePlayer1{
+        font-size: 0.3em;
+    }
+
+    #namePlayer2{
+        font-size: 10px; 
+    }
+
+    .score-name{
+        font-size: 30px;
+    }
+
+    #score{
+        font-size: 2em;
+    }
+
+    #game{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .player-1 {
+        font-size: 120%;
+    }
+
+    .player-2 {
+        font-size: 120%;
+    }
+}
