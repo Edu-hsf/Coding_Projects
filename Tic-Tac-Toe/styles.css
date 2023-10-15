@@ -350,6 +350,10 @@ section {
     #optionButtons button{
         font-size: 15px;
     }
+
+    #tied{
+        font-size: 70px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -380,6 +384,10 @@ section {
     #win{
         font-size: 50px;
     }
+
+    #tied{
+        font-size: 60px;
+    }
 }
 
 @media screen and (max-width: 413px) {
@@ -394,6 +402,10 @@ section {
 
     .player-2{
         font-size: 17px;
+    }
+
+    #tied{
+        font-size: 50px;
     }
 }
 
