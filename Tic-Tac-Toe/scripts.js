@@ -9,7 +9,6 @@ let scorePlayer2 = 0
 let clickCounts = 0
 let playerStarts = 1
 let playerWin = ''
-let startScoreNoRepeat = false
 
 let positionArray = [[], [], []]
 
@@ -26,12 +25,7 @@ function start(event) {
     if (inputPlayer1.value !== '' && inputPlayer2.value !== '') {
         disableHome()
         scoreBoardNames()
-        playerStarts = 1
-
-        if(startScoreNoRepeat === false){
-            startScoreNoRepeat = true
-            score()
-        }
+        score()
         
     }
 }
@@ -142,13 +136,11 @@ function youWin() {
 
         playerWin = ''
     } else if (clickCounts === 9) {
-        console.log(clickCounts)
         clickCounts = 0
         document.querySelector('#tied').style.display = 'flex'
         document.querySelector('#win').style.display = 'none'
         resetGame()
         gameOver()
-        
     }
 
     
@@ -179,10 +171,7 @@ function gameOver() {
         }, 800);
     })
     const backToHomeButton = document.querySelector('#backToHome').addEventListener('click', function () {
-        disableGameOverDisplay()
-        anableHome()
-        document.querySelector('#tied').style.display = 'none'
-        document.querySelector('#win').style.display = 'flex'
+        window.location.reload()
     })
 }
 
