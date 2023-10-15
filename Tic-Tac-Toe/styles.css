@@ -323,12 +323,17 @@ section {
     }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 560px) {    
+    main{
+        height: 100%;
+    }
+
     body{
         align-items: center;
         justify-content: flex-start;
         position: relative;
-        top: 70px;
+        top: 110px;
+        height: 500px;
     }
 
     .player-1 {
