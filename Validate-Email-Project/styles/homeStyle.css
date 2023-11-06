@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Roboto-Bold';
-    src: url('../fonts/Roboto-Bold.ttf');
+    src: url('../../fonts/Roboto-Bold.ttf');
 }
 
 @font-face {
     font-family: 'Roboto-Regular';
-    src: url('../fonts/Roboto-Regular.ttf');
+    src: url('../../fonts/Roboto-Regular.ttf');
 }
 
 :root {
@@ -148,11 +148,17 @@ aside img {
     aside img {
         width: 100%;
         height: 100%;
+        position: relative;
+        top: -5px;
     }
 
     .principalSection {
         position: relative;
         top: -15px;
+    }
+
+    header {
+        margin-top: 0px;
     }
 
     .principalSection section #subscribe {
@@ -162,6 +168,11 @@ aside img {
     .principalSection section #email {
         width: 90%;
         padding-right: 0px;
+        margin-bottom: 15px;
+    }
+
+    .principalSection section {
+        padding-top: 15px;
     }
 }
 
@@ -173,6 +184,6 @@ aside img {
 
 @media screen and (max-width: 394px) {
     header h1 {
-        font-size: 45px;
+        font-size: 40px;
     }
 }
