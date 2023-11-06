@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validate</title>
+    <link rel="stylesheet" href="./styles/homeStyle.css">
+</head>
+<body>
+    <main>
+        <section class="principalSection">
+            <header>
+                <h1>Stay Updated!</h1>
+            </header>
+            <article>
+                <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                <ul>
+                    <li><span>Product discovery and building what matters</span></li>
+                    <li><span>Measuring to ensure updates are a success</span></li>
+                    <li><span>And much more!</span></li>
+                </ul>
+            </article>
+            <section>
+                <form>
+                    <div>
+                        <label for="email">Email address</label>
+                        <span id="errorMessage"></span>
+                    </div>
+                    <input type="text" id="email" class="emailBorder" placeholder="email@company.com" autocomplete="off">
+                    <a><input type="submit" id="subscribe" value="subscribe to monthly newsletter"></a>
+                </form>
+            </section>
+        </section>
+        <aside>
+            <picture>
+                <source media="(max-width: 830px)" srcset="../images/illustration-sign-up-mobile.svg" type="image/svg+xml">
+                <img src="../images/illustration-sign-up-desktop.svg">
+                
+            </picture>
+        </aside>
+        
+    </main>
+    <script src="homePage.min.js" type="module"></script>
+</body>
+</html>
